@@ -98,7 +98,7 @@ void PrintBus(char *bus_number, char depot[11][50], FILE *file1){
         for (int i=0;i<arr[IndexOfBusInArray].amount_of_stops;i++){
             fprintf(file1, "%s ", arr[IndexOfBusInArray].stops[i]);
         }
-        fprintf(file1, "\n"); //aaaaaaaaaaaaaaaaaaa
+        fprintf(file1, "\n");
     }
     else
         fprintf(file1, "%s %s %s\n", "BUS", bus_number, "DOESN'T EXIST");
@@ -113,7 +113,7 @@ void PrintStop(char *bus_stop, char all_stops[31][50], FILE *file1){
         for (int i = 0; i < arr_stops[IndexOfStopInArray].amount_of_buses; i++) {
             fprintf(file1, "%s ", arr_stops[IndexOfStopInArray].buses[i]);
         }
-        fprintf(file1, "\n"); //aaaaaaaaaaaaaaaaaaa
+        fprintf(file1, "\n");
     }
 }
 
@@ -124,7 +124,7 @@ void PrintAll(FILE *file1){
         for (int i = 0; i < arr[j].amount_of_stops; i++) {
             fprintf(file1, "%s ", arr[j].stops[i]);
         }
-        fprintf(file1, "\n"); //aaaaaaaaaaaaaaaaaaa
+        fprintf(file1, "\n");
     }
 }
 
